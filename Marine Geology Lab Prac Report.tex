@@ -1,0 +1,210 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[a4paper, inner=2.2cm, outer=2.2cm, top=2.54cm, bottom=2.54cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{marginnote}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{svg}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{rotating}
+\usepackage{picinpar}
+\usepackage{boxedminipage}
+\usepackage{sidecap}
+\usepackage{flafter}
+\usepackage{tabularx}
+\usepackage{cite}
+\usepackage{gensymb}
+\usepackage{color}
+\usepackage{transparent}
+\usepackage{import}
+\usepackage{tocbibind}
+\usepackage[hidelinks]{hyperref}
+\setcounter{tocdepth}{2}
+\graphicspath{{\Location}}
+
+\usepackage[most]{tcolorbox}
+
+%textmarker style from colorbox doc
+\tcbset{textmarker/.style={%
+        enhanced,
+        parbox=false,boxrule=0mm,boxsep=0mm,arc=0mm,
+        outer arc=0mm,left=6mm,right=3mm,top=7pt,bottom=7pt,
+        toptitle=1mm,bottomtitle=1mm,oversize}}
+        
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Marine Geology Lab Course}
+\chead{}
+\rhead{Winter term 2021/2022}
+\cfoot{\thepage}
+
+\linespread{1.5}
+
+\title{\textsc{\textbf{\Large{Report\\\\\Huge{Lab Course\\Marine Geology}\\\\\Large{Dr. Hartmut Schulz}}}}}\\ 
+\author{submitted by\\Jeremias Glöggler, 4208277, M.Sc. Geosciences\\Florian Ludwig, 4019767, M.Sc. Geoecology\\Stanley Umeh, MN, M.Sc. Geosciences\\Philip Werner, 5829879, M.Sc. Geosciences}
+
+\date{15.--16.01.2022}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+\includegraphics[width=0.8\linewidth]{Marine Geology Prac Gruppenbild 2}
+\end{center}
+
+\thispagestyle{empty}
+
+\newpage
+\linespread{0}
+\tableofcontents
+\pagenumbering{roman}
+
+\newpage
+\linespread{0}
+\listoffigures
+
+\newpage
+
+
+\linespread{1.5}
+
+\addcontentsline{toc}{section}{Abstract}
+\section*{Abstract}
+Covering $\sim$70\% of the Earth’s surface, marine sediments contain the largest reservoir of chemical, biogenic and clastic depositions.
+Marine sediments yield an import record of numerous deposition processes in geologic history. According to Nicolaus Steno's third stratigraphic principle these sedimentary layers document successive events in geochronological order, resulting in older layers overlain by more recently deposited sediments. Significant events recorded in marine sediments include for example volcanic eruption, earthquake, and anthropogenic influences. Thus, marine sediments facilitate reconstructing geologic events and their environmental consequences. Biogenic components potentially give information on paleoenvironment and geochemical composition of the past ocean. 
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\section{Introduction}
+
+Marine sediments are a mixture of material deposited on the seaﬂoor that originated from the erosion of continents, volcanism, biological productivity, hydrothermal vents, and/or cosmic debris. The contributions of these sediment sources to the seaﬂoor are controlled by wind, ocean circulation, and waterdepth that collectively determine the transport, deposition, and preservation of each sediment type. Marine sediments are natural records of past geologic events and are investigated in sediment cores that are taken with a diverse array of probing methods with different possible applications. From 27.05. to 16.06.2017, a joint group of researchers from T\"ubingen, Zagreb, Trieste and Vienna undertook a marine (micro)paleontological/geological expedition, research mission 514 of the F.S.Poseidon, in the Adriatic Sea with marine sediment core acquisition starting in the Strait of Otranto, extending to the Gulf of Trieste, and ending near Dubrovnik. The work of this project is based on a sediment gravity core, GeoTÜ POS514-15-7GC, that was taken on 02.06.2017 at a water depth of 912.4~m around 60~km off the coast of Bari, Apulia region, Italy (Fig. \ref{location}).
+\begin{figure}[H]
+	\centering
+	\def\svgwidth{0.99\textwidth}
+	\input{Core_Location.pdf_tex}
+	%\includegraphics[width=0.9\textwidth]{Core_Location_pdf}
+	\caption[Sample location of GeoTÜ POS514-15-7GC in the Adriatic Sea]{Sample location of GeoTÜ POS514-15-7GC in the Adriatic Sea. The sediment gravity core was extracted at the western slope of the South Adriatic Pit (SAP).}
+	\label{location}
+\end{figure} 
+\subsection{Location}
+\subsubsection{Geologic setting}
+The epicontinental Adriatic Sea is the northermost arm of the Mediterranean Sea and is bordered by six coastal states: Italy, Slovenia, Croatia, Bosnia and Herzegovina, Montenegro and Albania. With a surface area of 138\,516~km$^2$ and a total volume of 35\,521~km$^3$ it is the largest semi-enclosed basin in the Mediterranean \cite{Vrdoljak.2021}. It is elongated in a NW-SE direction and shows strong transversal and longitudinal asymmetries consisting of different topography of coastal areas caused by the difference in orography between the opposite coastlands, with the Dinarides along the eastern coast close to the shoreline and the Apennines more distant from the shoreline on the other side. The Adriatic Sea bathymetry is characterised by a wide low-gradient shelf in the northern area, a slightly steeper and narrow shelf on the western flank and a small remnant basin in the front of Pescara, the Meso-Adriatic Depression (MAD) \cite{Vrdoljak.2021, Trincardi.2014}}. The deepest part is the South Adriatic Pit (SAP) reaching 1244~m at its deepest point. However, since over 50\% of the complete area is shallower than 100~m, the Adriatic is a shallow sea with a mean depth of 253~m \cite{Vrdoljak.2021}. The southern end of the sea is the Strait of Otranto, a narrow strait of 71~km between Italy and Albania that leads into the Ionian Sea. The Adriatic Sea corresponds to the foreland basin of the Appenninic chain. It presents a concentric fill of non-coeval siliclastic prograding bodies emplaced during the Plio-Quaternary. The terrigenous seafloor deposits in the investigated region of the Adriatic Sea consist mainly of fine--grained calcareous sediment \cite{Calanchi.1998, Dunlea.2018}. At present, sedimentation takes place along the western flank of the basin, due to basinwide cyclonic circulation and to the location of main sediment entry points \cite{Calanchi.1998}. The provenance location of GeoTÜ POS514-15-7GC is subject to the Southern Adriatic Gyre which persists throughout the year and is observed in all seasons. The sample site is located in the South-Augitica sedimentary province and thus sediments are mainly derived from southern Italy, e.g., Apulian Foreland \cite{Cerrano.2015}. Regional geology comprises Triassic--Miocene Apennine platform carbonates/ basin sediments and Miocene--Pleistocene syn- and post-orogenic sediments \cite{Tozer.2006}. 
+\subsubsection{Volcanic setting}
+\begin{figure}[h]
+	\centering
+	\def\svgwidth{0.7\linewidth}
+	\input{Volcano_location.pdf_tex}
+	%\includegraphics[width=0.7\textwidth]{Volcano_location_pdf}
+	\caption[Map of the late Quaternary volcanic provinces around the Adriatic Sea]{Map of the Mediterranean and adjacent areas with the location of coring site GeoTÜ POS514-15-7GC and late Quaternary volcanic provinces. Based on \cite{SIANI.2004} and \cite{Hamann.2010}}
+	\label{volcanoes}
+\end{figure} 
+Numerous Tertiary and Quaternary volcanic provinces are located in the vicinity of the study area and were active during the last 100~ka in the central Mediterranean basin (Fig. \ref{volcanoes}). The Campanian volcanic district, encompassing the Ischia-Phlegrean Fields and Somma-Vesuvius, is located about 280~km WSW of the sample locality. During the Late Quaternary, the volcanic region underwent intense explosive activity. Approximately 400~km towards the south lies the Aeolian Arc, which is characterised by highly explosive actvity recorded in central Tyrrhenian sediments until 130~ka. The volcanism of the arc that produced the islands Salina, Lipari, Vulcano, Basiluzzo and Stromboli has an orogenic character and exhibits mostly dacitic to rhyolitic composition except for more basic Stromboli. Located about 80~km further south, Etna is characterised by only few recent major explosive events. However, about 15~ka ago an intensive explosive activity took place. The ignimbrite products have an alkaline-transitional character and a benmoreitic composition. Volcanic activity on Pantelleria Island took place from 220 to 8~ka and is characterized by a peralkaline sodic magmatism with products of pantellerite–trachyte composition. This almost coeval volcanic activity resulted in the deposition of tephra in the Mediterranean basin and marine tephrochronology has allowed the reconstruction of the explosive volcanic activity in the Quaternary.
+
+The Aegean island of Thera (Santorini) was also subject to a number of volcanic eruptions during the Quaternary. Prominently, the ultraplinian Minoan eruption took place 1612~BCE and released earthquakes and tsunamis that caused regional devastation on the nearby coasts and islands \cite{Sahoglu.2022}.
+
+\newpage
+\section{Materials and methods}
+\subsection{Sediment core}
+ Sediment gravity core GeoTÜ POS514-15-7GC was taken on 02.06.2017 at a water depth of 912.4~m on the western slope of the South Adriatic Pit (SAP) at 41\degree\,33.981'\,N, 017\degree\,23.016'\,E around 60\,km off the coast of Bari, Apulia region, Italy (Fig. \ref{location}). It has a total length of $\sim$350~cm and is stored in the Bohrkernlager der Geowissenschaften, Building 7 on the Sand in Tübingen, Baden-Württemberg, Germany. It was operated on during the student practical course of the module Marine Geology and Geochemistry - Marine Geology (winter semester 2021/22) on 15.-16.01.2022.
+\subsection{Color description}
+Depending on mineral and organics content the respective layers of the examined core displayed different colors. Two different methods were applied to determine these colors and infer potential changes in sedimentation processes. First, the colors were characterized by the operators using the color code developed by Munsell Color, 4300 44$^\text{th}$ Street, Grand Rapids, MI 49512, USA. This approach, however, is susceptible to biases due to discrepancies in individual color perception and to lighting conditions. In order to quantitatively measure layer color properties and thereby compile a depthwise profile, color-spectrophotometry was applied along the core sections. 
+\subsubsection{Munsell Rock Color System}
+The Munsell Rock Color Chart can be applied to objectively describe rock colors without the necessity for sophisticated measuring devices. This method makes use of colorfast distributions of the Munsell color system in which each color is associated with an alphanumeric code that combines letters representing colors and numbers corresponding with the hue and the brightness of the color. The letters denote the basic colors red (R), yellow (Y) and green (G). The first number, representing the hue, ranges between 2.5 and 10 and indicates the proportion of the first basic color. The second number combination refers to the luminosity (value) and the purity/saturation (chroma) of the color. Higher numbers indicate brighter and more intense colors. However, color determination is susceptible to bias due to individual perception as well as lighting conditions
+\subsubsection{Color-spectrophotometer}
+In order to more precisely determine color values for each layer, spectrometry was conducted using a Konica Minolta portable spectrophotometer with spherical geometry and vertical design.
+Before this method was applied, some necessary preparation steps had to be made, including removal of potential artifacts induced during the operation, surface smoothening and tight covering in transparent plastic foil. Trapping of air bubbles was avoided. However, analyses should be conducted as soon as possible, in order to avoid color changes due to the oxidation of the usally suboxic pore water enviroment. Afterwards, the core sections were investigated in steps of 1~cm with the spectrophotometer (Fig. \ref{spectro}). The spectrophotometer is placed as flat as possible on the dry foil surface and measures the color properties and brightness on several color channels.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Spectrophotometer Jeremias}
+	\caption[Measurement with the portable color-spectrophotometer]{Incremental measurement of color properties with the portable color-spectrophotometer}
+	\label{spectro}
+\end{figure} 
+\subsection{Smear slides}
+For a detailed analyses of sedimentological properties, as grain size distribution and microfossil content, smear slides were prepared following the protocol described by Dr. Schulz. Small amounts of sediment of interesting sections were extracted using wooden toothpicks and spread on a microscope slide with the appliance of a drop of distilled water until the mixture was homogeneous. An optic binocular was utilized to gain an overview on grain size distributions and to identify microfossils. Also, a petrographic light microscope was used to study the smear slide under various magnifications and polarized light to investigate lithological properties, such as the origin of the sediments which can be siliciclastic, volcaniclastic, pelagic or neritic in nature or be mixed. 
+
+\subsection{Measurement of physical properties}
+Magnetic susceptibility ($\chi$) is a measure of the degree to which a material will become magnetized when it is subjected to an external magnetic field. Depending on mineral content, rocks and sediments show different magnetic susceptibilities. Carbonates and silicates are diamagmetic and express weak negative magnetic susceptibilities, whereas Fe-containing minerals and metals are paramagnetic; thus, they show positive magnetic susceptibilities as seen in high-Fe-basalts and metabasalts \cite{Liu.2012}. Measurement of magnetic susceptibilities thereby allows assessment of element content and identification of petrogenetic processes, e.g., volcanic activity. By generating a magnetic susceptibility profile of marine sediments the occurrence of noticeable events can be identified and classified in the stratigraphic context.
+
+\section{Results}
+\subsection{Core description}
+\begin{figure}[H]
+	\centering
+	\def\svgwidth{0.8\linewidth}
+	%\input{Core.pdf_tex}
+	\includegraphics[width=0.8\textwidth]{Core_pdf}
+	\caption[Core overview picture]{Overview picture of core GeoTÜ POS514-15-7GC}
+	\label{view}
+\end{figure} 
+\subsubsection{Section 4}
+\subsubsection{Section 3}
+Section 3 ranges from composite depths 43.5--144.5~cm. In general, it shows a transition in color from a more yellowish upper part to a predominantly grayish lower segment, leading to the more uniformly grayish colored Section 2 below. The highest proportion of yellow, however, is achieved slightly below the middle part in association with layers and portions of biogenic constituents and traces of bioturbation. Its composition is mostly dominated by fine silts and clays. At $\sim$54~cm there are hoizontal lenses of slightly higher sand contents. From $\sim$68--78~cm, patchily distributed cavities can be observed representing burrows or porous patches of high shell fragment content. From $\sim$80--84~cm, a continuous horizont of shells and shell fragment is present and potentially shows horizontal orientation of fossils. Another patch of shells and shell fragments is present at $\sim$90--100~cm depth in association with an irregular layer transition. 
+\subsubsection{Section 2}
+\subsubsection{Section 1}
+\subsection{Smear slides}
+\subsubsection{Section 4}
+\subsubsection{Section 3}
+Three smear slides were taken from noticeable parts of Section 3. Lithologically relatively homogeneous, the section is predominantly composed of clay at percentages of $\sim$70--90\%. Silt contributes $\sim$5--20\%, whereas sand shows the lowest percentages of $\sim$2--10\% in the investigated smear slides. Minor constituents include volcanic glass shards, globigerinid foraminifers, bryozoans and bivalve shell fragments. At depth 85.5~cm an indeterminate opaque hexagonal was noticed.
+\subsubsection{Section 2}
+\subsubsection{Section 1}
+\subsection{Grain size profile}
+\begin{wrapfigure}{L}{0.6\textwidth}
+	\centering
+	\def\svgwidth{\linewidth}
+	\input{Grain_size_plot.pdf_tex}
+	%\includegraphics[width=0.9\textwidth]{Core_Location_pdf}
+	\caption[Grain size proportions profile]{Grain size proportions of sand, silt and clay along the profile of core GeoTÜ POS514-15-7GC}
+	\label{grain_size}
+\end{wrapfigure}
+Based on the analysis of selectively taken smear slide samples, sand, silt and clay contents were determined at various representative points of core GeoTÜ POS514-15-7GC to infer the grain size distribution along the probed stratigraphy. The grain size is mostly dominated by high proportions of clay ranging from 30--90\%. Sand content is overall more stable, contributing 30\% in the uppermost section and decreasing rapidly to 73~cm depth, below which it remains relatively uniform at between 0--10\%.
+\subsection{Core color}
+\begin{figure}[H]
+	\centering
+	\def\svgwidth{0.9\linewidth}
+	\input{Marine Geology Color Plot.pdf_tex}
+	%\includegraphics[width=0.9\textwidth]{Core_Location_pdf}
+	\caption[Measured color properties]{Color properties of core GeoTÜ POS514-15-7GC measured with the portable color-spectrophotometer}
+	\label{color}
+\end{figure} 
+\subsection{Physical properties}
+\begin{figure}[H]
+	\centering
+	\def\svgwidth{0.8\linewidth}
+	%\input{Physical Properties.pdf_tex}
+	\includegraphics[width=0.8\textwidth]{15-07MSCL.jpg}
+	\caption[Physical properties]{Raw travel time, raw density and raw magnetic susceptibility of core GeoTÜ POS514-15-7GC}
+	\label{phys_prop}
+\end{figure} 
+\subsubsection{Travel time}
+
+\subsubsection{Density}
+Overlaid by a growing sediment layer, the material is progressively compressed and lowered, resulting in increasing density. Thus, density generally increases with depth.
+
+\subsubsection{Magnetic susceptibility}
+Magnetic susceptibility is positive throughout the sediment profile indicating significant concentrations of metals. In the regional geologic context this concentration is likely linked to material of volcanic origin, i.e., tephra from the Mediterranean volcanic regions. Two conspicuous peaks can be discerned at 0.21~m (sedi rate -> 116 Jahre; Vesuv Ausbruch 18.12.1875, Pnatelleria 1891 CE) and 0.95~m (527 Jahre; Campi Flegrei 1538 CE, Ischia 1302 CE, Lipari 1230 CE), likely marking two occurrences of high volcanic activity.
+\section{Discussion}
+\cite{Petrinec.2012} "In the South Adriatic Pit, where two peaks are more easily identiﬁed, sedimentation rate could be estimated to be $\sim$1.8\pm0.5 mm y$^{-1}$"
+"sedimentation rates estimated for Middle and South Adriatic using $^{137}$Cs as a radiotracer are consistent with sedimentation rates estimated for the rest of the Mediterranean sea, i.e.
+1.1–8.7 mm y$^{-1}$ using other radiotracer methods, i.e. the $^{210}$Pb dating method"
+
+\section{Conclusion}
+In this lab course, the four sections of the gravity core GeoTÜ POS514-15-7GC from the Adriatic Sea off the coast of Bari were analyzed on their sedimentological, lithological and microbiological properties by applying typical core logging methods. The predominant grain size fraction was silty clay, sometimes interrupted by coarser sandy areas mostly associated with higher microfossil and volcanic glass contents.
+
+\newpage
+\bibliographystyle{acm}
+\bibliography{MarineGeology_LabPrac_Literatur}
+\end{document}
